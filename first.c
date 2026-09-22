@@ -8,8 +8,7 @@ If the resident was present for zero days, print NO CHARGE and nothing else. If 
 1, 2 or 3, print INVALID PLAN and nothing else. */
 
 
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 int main(){
     int code_no,no_of_days,guest_meal;
     double amount=0;
@@ -22,7 +21,7 @@ int main(){
     printf("Enter the guest meal:\n");
     scanf("%d",&guest_meal);
     if(no_of_days==0){
-        printf("No charge.\n");
+        printf("No Charge.\n");
         return 0;
     }
 
